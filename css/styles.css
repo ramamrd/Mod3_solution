@@ -1,0 +1,142 @@
+body{
+  background-color: #99ff99;
+  font-family: 'Lato', sans-serif;
+}
+
+#header-nav {
+  background-color: #f6b319;
+  border-radius: 0;
+  border: 0;
+  border: 3px solid #611222; /* border surroundiung header + drop down bittom line */ 
+}
+.navbar-brand {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color:#951C49;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+#collapsable-nav {
+  border-color: #611222;
+  background-color: #f6b319;
+}
+#nav-list {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-top: 3px solid #611222; /* menu top border */
+ }
+#nav-list a {
+  color: #951C49;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px
+}
+#nav-list a:hover, #nav-list a:active, #nav-list a:focus{
+  background: #99ff99;
+  border-top: 5px;
+  border-color: #61122f;
+  border-bottom: 5px
+  border-radius:5px;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+h2{
+  color: #61122f;
+  font-size: 35px;
+  margin: 30px;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #611222;
+}
+
+.container>div>div>div{
+  background-color: #f6f119;
+  border: 2px solid #611222;
+  border-radius: 10px;
+  padding: 0 20px 20px;
+  margin-bottom: 30px; 
+}
+
+.container>div>div>div:hover{
+  box-shadow: 0 0 20px #333;
+  transition: box-shadow 0.5s;
+}
+
+h3{
+  color: #611222;
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: bold;
+}
+p{
+  color: #611222;
+  text-align: center;
+  font-size: 20px;
+}
+hr{
+  border: 2px solid #611222;
+  margin:0 auto;
+}
+
+.text-center .btn-default, .text-center .btn-default:visited, .text-center .btn-default:focus{
+  border: 3px solid #000;
+  background-color: #611222;
+  color: #fff;
+  font-style: bold;
+  font-size: 20px;
+  margin-top: 40px;
+}
+.text-center .btn-default:hover, .text-center .btn-default:active{
+  background-color: #99ff99;
+  box-shadow: 0 0 10px #333;
+  transition: box-shadow 0.2s;
+  color: #000;
+  border: 3px solid #000;
+}
+
+@media (min-width: 768px){
+  .navbar{
+    padding-bottom: 15px;
+  }
+  h1{
+    font-size: 45px;
+    letter-spacing: 2px;
+  }
+  .navbar-brand{
+    margin-top: 0;
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 767px){  
+  .navbar-default .navbar-collapse{
+    border: 3px solid #611222;
+    border-width: 3px 0 0;
+    border-radius: 0;
+  }
+  .navbar-default .navbar-toggle .icon-bar{
+    background-color: #f6b319;
+  }
+  .navbar-default .navbar-toggle, .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:visited{
+    background-color: #f6b319;
+  }
+  .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:active {
+    background-color: #99ff99;
+  }
+  .navbar-brand{
+    margin-top: 0;
+    padding-top: 7px;
+  }
+  .navbar-nav {
+      margin: 0px -15px;
+  }
+}
